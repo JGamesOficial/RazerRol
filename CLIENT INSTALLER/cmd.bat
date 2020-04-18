@@ -16,22 +16,22 @@ if /I "%c%" EQU "Reducida" goto :red
 
 :comp
 cls
-copy data\servers.dat %APPDATA%\.minecraft /y
-xcopy data\ambience_music %APPDATA%\.minecraft\ambience_music\ /y /E /I 
-rmdir %APPDATA%\.minecraft\mods\ /Q /S
-xcopy data\mods\c %APPDATA%\.minecraft\mods\ /y /E /I 
-xcopy data\mods\r %APPDATA%\.minecraft\mods\ /y /E /I 
-xcopy data\config %APPDATA%\.minecraft\config\ /y /E /I 
-xcopy data\resources %APPDATA%\.minecraft\resources\ /y /E /I 
-xcopy data\resourcepacks %APPDATA%\.minecraft\resourcepacks\ /y /E /I
+copy data\servers.dat "%APPDATA%\.minecraft" /y
+xcopy data\ambience_music "%APPDATA%\.minecraft\ambience_music\" /y /E /I 
+rmdir "%APPDATA%\.minecraft\mods\" /Q /S
+xcopy data\mods\c "%APPDATA%\.minecraft\mods\" /y /E /I 
+xcopy data\mods\r "%APPDATA%\.minecraft\mods\" /y /E /I 
+xcopy data\config "%APPDATA%\.minecraft\config\" /y /E /I 
+xcopy data\resources "%APPDATA%\.minecraft\resources\" /y /E /I 
+xcopy data\resourcepacks "%APPDATA%\.minecraft\resourcepacks\" /y /E /I
 goto :b
 
 :red
 cls
-rmdir %APPDATA%\.minecraft\mods\ /Q /S
-xcopy data\mods\r %APPDATA%\.minecraft\mods\ /y /E /I 
-xcopy data\resourcepacks %APPDATA%\.minecraft\resourcepacks\ /y /E /I
-copy data\servers.dat %APPDATA%\.minecraft /y
+rmdir "%APPDATA%\.minecraft\mods\" /Q /S
+xcopy data\mods\r "%APPDATA%\.minecraft\mods\" /y /E /I 
+xcopy data\resourcepacks "%APPDATA%\.minecraft\resourcepacks\" /y /E /I
+copy data\servers.dat "%APPDATA%\.minecraft" /y
 goto :b
 
 :java
@@ -60,4 +60,3 @@ echo .                                                                         .
 echo ---------------------------------------------------------------------------
 ping 127.0.0.1 -n 6 > nul
 exit
-del /f %APPDATA%\.minecraft\mods\ /y /E /I 
