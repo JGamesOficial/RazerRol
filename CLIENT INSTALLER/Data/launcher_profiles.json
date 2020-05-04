@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "RazerROL - Forge": {
+      "name": "RazerROL - Forge",
+      "lastVersionId": "1.12.2-forge1.12.2-14.23.5.2847",
+      "javaArgs": "-Xmx4G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent\u003d20 -XX:G1ReservePercent\u003d20 -XX:MaxGCPauseMillis\u003d50 -XX:G1HeapRegionSize\u003d32M",
+      "typo": "NoPremium",
+      "useForge": false
+    },
+    "(Predeterminado)": {
+      "name": "(Predeterminado)",
+      "useForge": false
+    }
+  },
+  "selectedProfile": "RazerROL - Forge",
+  "clientToken": "e95b89cca2d944d5a2f8d34e362f8490"
+}
