@@ -17,7 +17,7 @@ xcopy data\config "%APPDATA%\.minecraft\config\" /y /E /I
 xcopy data\resources "%APPDATA%\.minecraft\resources\" /y /E /I 
 xcopy data\resourcepacks "%APPDATA%\.minecraft\resourcepacks\" /y /E /I
 copy data\options.txt "%APPDATA%\.minecraft\" /y 
-
+copy data\city-sober-pack-v1-2.rar "%APPDATA%\.minecraft\" /y 
 goto final
 
 :final
