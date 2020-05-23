@@ -1,6 +1,5 @@
 @echo off
 start forge_1.12.2.jar
-color a
 goto :comp
 
 
@@ -23,11 +22,10 @@ goto final
 :final
 cls
 color a
-echo ---------------------------------------------------------------------------
-echo .                                                                         .
-echo .            Cliente Instalado, En unos instantes se abrira               .
-echo .                                                                         .
-echo ---------------------------------------------------------------------------
+echo --------------------------------------------
+echo .                                          .
+echo .            Cliente Instalado             .
+echo .                                          .
+echo --------------------------------------------
 ping 127.0.0.1 -n 6 > nul
-start %APPDATA%\.minecraft\LauncherFenix.jar
 exit
